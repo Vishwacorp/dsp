@@ -20,7 +20,18 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 1. `pwd` show current working directory path
+> > 2. `mkdir` create a directory
+> > 3. `rm -r` deleting a directory
+> > 4. `touch file.txt` creating a file using touch command
+> > 5. `rm` deleting a file
+> > 6. `mv name.txt > new_name.txt` renaming a file
+> > 7. `ls -a` listing hidden files
+> > 8. `cp -r dir1/file.txt dir2/` copy a file from one directory to another
+> > 9. `cat file.txt` output contents of a file to the terminal
+> > 10. `sort file.txt` sort the lines alphabetically
+> > 11. `grep -i text file.txt` search for text in files
+> > 12. `sed 's/search/replace/g'` substitute search string with replace globally
 
 ---
 
@@ -35,7 +46,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > * `ls` lists all entries in a directory, excluding hidden entries.
+> > * `ls -a` lists all entries in a directory, including hidden entries. 
+> > * `ls -l` lists all contents in a table format with 7 columns.
+> > * `ls -lh` just like `ls -l`, but prints file sizes in a human readable format.
+> > * `ls -lah` just like `ls -lh`, but also for hidden entries.
+> > * `ls -t` just like `ls`, but sorted by modification time, recent first.
+> > * `ls -Glp` The `G` enables colorized outputs, making it easier to distinguish directories and certain files, `l` enables long-form table mode, and `p` puts a slash ('/') after directories.
 
 ---
 
@@ -43,7 +60,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 1. `ls -S` sort by file size, largest first
+> > 2. `ls -m` displays names as a comma-separated list
+> > 3. `ls -1` displays each entry on a line
+> > 4. `ls -R` lists all subdirectories and their entries as well
+> > 5. `ls -r` reverse sorted order, with directories first
 
 ---
 
@@ -51,7 +72,11 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `xargs` takes standard input and converts it into arguments to pass into another function, splitting it along the defined delimiter. For example,
+> >
+> > `find . -name "*.md" | xargs cat >> test.txt`
+> >
+> > will find all files with the extension ".md" in a directory (and its subdirectories) and pass them onto xargs, where we are using **cat** to read the contents and append them to a test.txt file. This way, xargs can be used to combine the contents of files that fit a particular search query. 
 
  
 
